@@ -1,0 +1,3 @@
+# Replaces brown dye trade with cocoa bean trade
+execute as @e[type=wandering_trader,tag=!st_complete] if data entity @s Offers.Recipes[{sell:{id:"minecraft:brown_dye"}}] run data modify entity @s Offers.Recipes[{sell:{id:"minecraft:brown_dye"}}] set value {maxUses:12,buyB:{id:"minecraft:air",Count:1b},buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:cocoa_beans",Count:1b},xp:1,uses:0,priceMultiplier:0.05f,specialPrice:0,demand:0,rewardExp:1b}
+#execute as @e[type=wandering_trader,tag=!st_complete] if data entity @s Offers.Recipes[{sell:{id:"minecraft:cocoa_beans"}}] run say bean s

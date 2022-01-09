@@ -1,0 +1,4 @@
+# Summon the entities needed to perform random number generation
+execute positioned 0.5 255 0 unless entity @e[type=armor_stand,distance=..0.5] run summon armor_stand ~ ~ ~ {NoGravity:1,Marker:1,Invisible:1,Tags:["st_rand","st_rand_1","st_rand_counter"]}
+execute positioned 1.6 255 0 unless entity @e[type=armor_stand,distance=..0.5] run summon armor_stand ~ ~ ~ {NoGravity:1,Marker:1,Invisible:1,Tags:["st_rand","st_rand_2","st_rand_counter"]}
+execute positioned 2.6 255 0 unless entity @e[type=armor_stand,distance=..0.5] run summon armor_stand ~ ~ ~ {NoGravity:1,Marker:1,Invisible:1,Tags:["st_rand","st_rand_3"]}
